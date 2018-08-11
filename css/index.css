@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito|Nunito+Sans");
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+header::after {
+  display: block;
+  position: fixed;
+}
+
+header {
+  height: 100vh;
+  z-index: 2;
+  background-image: linear-gradient(to top, #00bbb7 0%, #ad5cff 100%);
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+img {
+  display: block;
+}
+
+#hero-logo {
+  width: 15%;
+  margin: 0 auto;
+  padding-top: 5%;
+}
+
+h1,
+h2 {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+h1 {
+  display: block;
+  font-family: "Nunito Sans", sans-serif;
+  color: white;
+  text-align: center;
+  font-size: 4rem;
+  letter-spacing: 2px;
+}
+
+a {
+  text-decoration: none;
+  color: #00bbb7;
+}
+
+a:hover {
+  color: #ad5cff;
+}
+
+.icons {
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+}
+
+i {
+  margin: 2% 2%;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+hr {
+  width: 33%;
+  color: white;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  height: 50vh;
+  padding: 5% 0;
+}
+
+.sponsor-section {
+  height: 50vh;
+  padding: 5% 0;
+}
+
+.centered {
+  text-align: center;
+}
+
+.grey {
+  background-color: #f5f5f5;
+}
+
+.white {
+  background-color: white;
+}
+
+.sec-img {
+  width: 66%;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: -10px -10px 30px 4px rgba(0, 0, 0, 0.1), 10px 10px 30px 4px rgba(45, 78, 255, 0.15);
+}
+
+.sec-text {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.right {
+  padding-right: 10%;
+}
+
+.left {
+  padding-left: 10%;
+}
+
+ul {
+  margin-left: 10%;
+}
+
+.sponsor-grid {
+  margin: 5% 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+.sponsor-img {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+.bottom-text {
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 415px) {
+  .section {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

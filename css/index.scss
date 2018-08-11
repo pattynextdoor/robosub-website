@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito|Nunito+Sans');
+
+$orange: #ffa000;
+$blue: #00bbb7;
+$purple: #ad5cff;
+
+$sec-grey: #f5f5f5;
+
+$hero-gradient: linear-gradient(to top, $blue 0%, $purple 100%);
+
+$title-font: 'Nunito Sans', sans-serif;
+$title-color: white;
+$text-font: 'Nunito', sans-serif;
+
+$img-shadow: -10px -10px 30px 4px rgba(0,0,0,.1),10px 10px 30px 4px rgba(45,78,255,.15);
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+header::after {
+  display: block;
+  position: fixed;
+}
+
+header {
+  height: 100vh;
+  z-index: 2;
+  background-image: $hero-gradient;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+img {
+  display: block;
+}
+
+#hero-logo {
+  width: 15%;
+  margin: 0 auto;
+  padding-top: 5%;
+}
+
+h1,
+h2 {
+  font-family: $title-font;
+}
+
+h1 {
+  display: block;
+  font-family: $title-font;
+  color: $title-color;
+  text-align: center;
+  font-size: 4rem;
+  letter-spacing: 2px;
+}
+
+a {
+  text-decoration: none;
+  color: $blue;
+}
+
+a:hover {
+  color: $purple;
+}
+
+.icons {
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+}
+
+i {
+  margin: 2% 2%;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+hr {
+  width: 33%;
+  color: white;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  height: 50vh;
+  padding: 5% 0;
+}
+
+.sponsor-section {
+  height: 50vh;
+  padding: 5% 0;
+}
+
+.centered {
+  text-align: center;
+}
+
+.grey {
+  background-color: $sec-grey;
+}
+
+.white {
+  background-color: white;
+}
+
+.sec-img {
+  width: 66%;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: $img-shadow;
+}
+
+.sec-text {
+  font-family: $text-font;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.right {
+  padding-right: 10%;
+}
+
+.left {
+  padding-left: 10%;
+}
+
+ul {
+  margin-left: 10%;
+}
+
+.sponsor-grid {
+  margin: 5% 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+.sponsor-img {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+.bottom-text {
+  text-align: center;
+  font-family: $text-font;
+  font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 415px) {
+  .section {
+    grid-template-columns: 1fr;
+  }
+}
