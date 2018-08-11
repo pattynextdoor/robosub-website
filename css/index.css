@@ -16,6 +16,7 @@ header {
   background-size: cover;
   background-attachment: fixed;
   position: relative;
+  text-shadow: 2px 2px 5px #333;
 }
 
 img {
@@ -29,7 +30,8 @@ img {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   font-family: "Nunito Sans", sans-serif;
 }
 
@@ -57,11 +59,61 @@ a:hover {
   text-align: center;
 }
 
-i {
+.icons > i {
   margin: 2% 2%;
 }
 
+.team-i {
+  font-size: 2rem;
+  padding-right: 2%;
+}
+
+.teams {
+  height: 100%;
+}
+
+.label {
+  text-align: center;
+}
+
+.label > i,
+.label > h3 {
+  display: inline;
+}
+
+.fa-wrench {
+  color: #00bbb7;
+}
+
+.fa-bolt {
+  color: #ffa000;
+}
+
+.fa-terminal {
+  color: #ad5cff;
+}
+
+.fa-chart-line {
+  color: #00d582;
+}
+
+.team-name {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 2rem;
+}
+
+.team-desc {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 5% 16.5%;
+}
+
 h2 {
+  font-size: 3rem;
+}
+
+h3 {
   font-size: 2rem;
 }
 
@@ -75,8 +127,7 @@ section {
   grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-items: center;
-  height: 50vh;
-  padding: 5% 0;
+  height: 100%;
 }
 
 .sponsor-section {
@@ -119,6 +170,10 @@ section {
 
 ul {
   margin-left: 10%;
+}
+
+.full {
+  grid-column: span 2;
 }
 
 .sponsor-grid {
